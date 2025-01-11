@@ -1,0 +1,381 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Fira Sans", serif;
+}
+body {
+  background-color: #f1f1f3;
+}
+/* Shared Button */
+button {
+  padding: 15px 30px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #006a50;
+  border: 1px solid #006a50;
+  border-radius: 8px;
+  background-color: white;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+h3 {
+  color: rgba(14, 14, 14, 0.8);
+  font-size: 20;
+  font-weight: bold;
+  margin: 24px 0 12px;
+}
+
+/* Hero Section Style */
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 24px 170px;
+  align-items: center;
+}
+.hero h2 {
+  font-size: 32px;
+  font-weight: bold;
+  cursor: default;
+}
+.hero h2:hover {
+  background-image: url(../assets/flag-of-bangladesh.png);
+  background-size: cover;
+  background-position: center;
+  background-clip: text;
+  color: transparent;
+  transition: all 0.15s;
+}
+
+.hero nav button:hover {
+  background-color: #006a50;
+  color: white;
+}
+
+/* Banner style */
+.hero .banner-bg {
+  max-width: 1280px;
+  height: 560px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #c6e4d6;
+  border-radius: 24px;
+  gap: 200px;
+  margin: 10px auto 80px;
+  padding: 80px 100px;
+}
+.banner-bg p {
+  color: #0e0e0e7a;
+  font-size: 24px;
+  font-weight: 500;
+}
+.banner-bg h1 {
+  font-size: 56px;
+  font-weight: bold;
+  color: #0e0e0e;
+  margin: 16px 0 24px;
+}
+.banner button,
+.news-button,
+.donate-btn {
+  border: none;
+  background-color: #006a50;
+  color: white;
+}
+.banner button:hover,
+.news-button:hover,
+.donate-btn:hover {
+  border: 1px solid #006a50;
+  background-color: white;
+  color: #006a50;
+}
+
+/* Main Section */
+main {
+  max-width: 1480px;
+  margin: 0 auto;
+}
+main h2 {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 32px;
+  color: rgba(14, 14, 14, 1);
+}
+main section {
+  margin-bottom: 80px;
+}
+/* pillar section */
+.pillars .cards,
+.cards {
+  display: flex;
+  gap: 24px;
+}
+.pillars .card,
+.card {
+  background-color: white;
+  padding: 24px;
+  border-radius: 16px;
+  flex: 1;
+}
+.card p {
+  color: rgba(14, 14, 14, 0.7);
+  margin-bottom: 24px;
+}
+/* Vision section */
+
+.vision p {
+  color: rgba(14, 14, 14, 0.7);
+  margin-bottom: 24px;
+}
+.vision .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  padding: 32px;
+}
+.card-color1 {
+  background-color: rgba(84, 144, 245, 0.2);
+}
+.card-color2 {
+  background-color: rgba(198, 228, 214, 1);
+}
+.card-color3 {
+  background-color: rgba(247, 235, 207, 1);
+}
+
+.vision .vision-btn1 {
+  background-color: #5490f5;
+  border: none;
+  color: white;
+}
+.vision .vision-btn1:hover {
+  background-color: white;
+  border: none;
+  color: #5490f5;
+}
+.vision .vision-btn2 {
+  background-color: #09a15c;
+  border: none;
+  color: white;
+}
+.vision .vision-btn2:hover {
+  background-color: white;
+  border: none;
+  color: #09a15c;
+}
+.vision .vision-btn3 {
+  background-color: #ffc239;
+  border: none;
+  color: white;
+}
+.vision .vision-btn3:hover {
+  background-color: white;
+  border: none;
+  color: #ffc239;
+}
+/* Quote section */
+.quote {
+  height: 256px;
+  background-image: url(../assets/quote-bg.png);
+  background-position: 25px 25px;
+  background-repeat: no-repeat;
+  background-color: white;
+  border-radius: 16px;
+  margin-top: 32px;
+}
+.quote .quote-box {
+  padding: 48px 24px;
+}
+.quote-box .main-quote {
+  color: rgba(14, 14, 14, 0.8);
+}
+.quote-box .sub {
+  color: rgba(14, 14, 14, 0.5);
+}
+
+/* Table style */
+.opinion .opinion-table {
+  padding: 32px;
+  background-color: white;
+  border-radius: 16px;
+}
+.opinion table {
+  width: 100%;
+}
+.opinion table,
+tr,
+td {
+  border: 1px solid rgba(14, 14, 14, 0.15);
+  border-collapse: collapse;
+  height: 92px;
+}
+.opinion #table-head {
+  text-align: left;
+  font-size: 20px;
+  height: 72px;
+}
+.opinion .table-select {
+  text-align: center;
+}
+.opinion table select {
+  background-color: rgba(198, 228, 214, 1);
+  padding: 10px 14px;
+  border-radius: 4px;
+  text-align: center;
+  font-weight: 450;
+}
+.question,
+th {
+  font-weight: 600;
+  padding-left: 10px;
+}
+
+/* News Section */
+.news-card {
+  display: flex;
+  padding: 48px;
+  background-color: white;
+  border-radius: 16px;
+  gap: 32px;
+  margin-bottom: 24px;
+}
+.news-card .main-img {
+  border-radius: 24px;
+}
+.news-card .text-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+}
+.text-content h3 {
+  font-size: 32px;
+  font-weight: bold;
+  color: rgba(14, 14, 14, 0.8);
+}
+.text-content time,
+p {
+  color: rgba(14, 14, 14, 0.7);
+}
+.date {
+  margin-right: 12px;
+}
+
+/* Donation Section */
+.donation-bg {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+.donation-bg p {
+  width: 80%;
+  margin-bottom: 24px;
+}
+.donation-bg .donation-input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+.donation-input .donation-cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+.donation-input .donation-card {
+  font-size: 40px;
+  font-weight: bold;
+  padding: 40px;
+  background-color: white;
+  border: 1px solid rgb(14, 14, 14, 0.15);
+  border-radius: 16px;
+  cursor: pointer;
+}
+.donation-cards .color2 {
+  background-color: rgba(198, 228, 214, 1);
+}
+.donation-card:hover {
+  background-color: rgba(198, 228, 214, 1);
+  transition: all 0.15s;
+}
+.donation-cards .color2:hover {
+  background-color: white;
+  transition: all 0.15s;
+}
+.donation-input input {
+  width: 80%;
+  text-align: center;
+  padding: 20px 40px;
+  font-size: 20px;
+  font-weight: 500;
+  border: none;
+  border-bottom: 1px solid rgba(14, 14, 14, 0.15);
+}
+
+/* Newsletter Section */
+.newsletter {
+  height: 395px;
+  background-color: #c6e4d6;
+  border-radius: 16px;
+}
+.newsletter-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+.newsletter-content p {
+  width: 45%;
+}
+.newsletter-content form {
+  display: flex;
+  margin: 24px 0;
+}
+.newsletter-content input {
+  border: none;
+  font-size: 20px;
+  padding: 10px;
+}
+.newsletter-content input[type="email"] {
+  width: 600px;
+  border-radius: 8px 0 0 8px;
+}
+.newsletter-content input[type="submit"] {
+  width: 150px;
+  border-radius: 0 8px 8px 0;
+  background-color: #006a50;
+  color: white;
+}
+
+/* Footer style */
+footer {
+  background-color: white;
+  height: 226px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+}
+footer #footer-header {
+  font-size: 32px;
+  font-weight: bold;
+}
+footer > hr {
+  width: 70%;
+  border: 1px solid rgba(14, 14, 14, 0.096);
+}
+footer .icons {
+  display: flex;
+  gap: 24px;
+}
