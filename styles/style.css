@@ -53,7 +53,10 @@ nav {
   background-color: #006a50;
   color: white;
 }
-
+.hero nav button:active {
+  background-color: #006a5096;
+  color: white;
+}
 /* Banner style */
 .hero .banner-bg {
   max-width: 1280px;
@@ -88,9 +91,17 @@ nav {
 .banner button:hover,
 .news-button:hover,
 .donate-btn:hover {
-  border: 1px solid #006a50;
+  /* border: 1px solid #006a50; */
   background-color: white;
   color: #006a50;
+  box-shadow: 1px 1px 10px #0000006c;
+}
+.banner button:active,
+.news-button:active,
+.donate-btn:active {
+  background-color: rgba(255, 255, 255, 0.247);
+  color: #006a50;
+  box-shadow: 1px 1px 10px #0000002d;
 }
 
 /* Main Section */
@@ -161,6 +172,13 @@ main section {
   background-color: white;
   border: none;
   color: #5490f5;
+  box-shadow: 1px 1px 10px #0000006c;
+}
+.vision .vision-btn1:active {
+  background-color: rgba(255, 255, 255, 0.37);
+  border: none;
+  color: #5490f5;
+  box-shadow: 1px 1px 10px #0000002d;
 }
 .vision .vision-btn2 {
   background-color: #09a15c;
@@ -171,6 +189,13 @@ main section {
   background-color: white;
   border: none;
   color: #09a15c;
+  box-shadow: 1px 1px 10px #0000006c;
+}
+.vision .vision-btn2:active {
+  background-color: rgba(255, 255, 255, 0.377);
+  border: none;
+  color: #09a15c;
+  box-shadow: 1px 1px 10px #0000002d;
 }
 .vision .vision-btn3 {
   background-color: #ffc239;
@@ -181,7 +206,15 @@ main section {
   background-color: white;
   border: none;
   color: #ffc239;
+  box-shadow: 1px 1px 10px #0000006c;
 }
+.vision .vision-btn3:active {
+  background-color: rgba(255, 255, 255, 0.377);
+  border: none;
+  color: #ffc239;
+  box-shadow: 1px 1px 10px #0000002d;
+}
+
 /* Quote section */
 .quote {
   height: 256px;
@@ -311,9 +344,9 @@ p {
   background-color: rgba(198, 228, 214, 1);
 }
 .donation-card:hover {
-  background-color: rgba(198, 228, 214, 1);
+  background-color: rgba(198, 228, 214, 0.438);
   transition: all 0.15s;
-  box-shadow: 2px 2px 10px #006a502a;
+  box-shadow: 1px 1px 10px #0000006c;
 }
 .donation-cards .color2:hover {
   background-color: white;
@@ -380,6 +413,7 @@ footer {
 footer #footer-header {
   font-size: 32px;
   font-weight: bold;
+  cursor: default;
 }
 footer > hr {
   width: 70%;
