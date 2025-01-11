@@ -137,6 +137,11 @@ main section {
   align-items: start;
   padding: 32px;
 }
+
+.card:hover {
+  box-shadow: 1px 1px 10px #006a503f;
+  transition: all 0.2s;
+}
 .card-color1 {
   background-color: rgba(84, 144, 245, 0.2);
 }
@@ -243,6 +248,10 @@ th {
   gap: 32px;
   margin-bottom: 24px;
 }
+.news-card:hover {
+  box-shadow: 1px 1px 10px #006a502a;
+  transition: all 0.2s;
+}
 .news-card .main-img {
   border-radius: 24px;
 }
@@ -304,6 +313,7 @@ p {
 .donation-card:hover {
   background-color: rgba(198, 228, 214, 1);
   transition: all 0.15s;
+  box-shadow: 2px 2px 10px #006a502a;
 }
 .donation-cards .color2:hover {
   background-color: white;
